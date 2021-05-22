@@ -1,11 +1,5 @@
 package tests;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,9 +14,6 @@ import com.mycompany.arrayflattener.ArrayFlattener;
  * @author niallcampbell
  */
 public class ArrayFlattenerTests {
-    
-    public ArrayFlattenerTests() {
-    }
     
     @BeforeAll
     public static void setUpClass() {
@@ -53,8 +44,6 @@ public class ArrayFlattenerTests {
     
     @Test
     public void givenNullValueReturnNull() {
-    
         assertNull(ArrayFlattener.flattenArray(null));
-        
     }
 }
