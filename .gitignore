@@ -1,5 +1,3 @@
 *.xml
-/ZooProject/target/
-/ArrayFlattener/target/
-/ArrayFlattener/nbproject/
-*.txt
+*/target/
+*/nbproject/
