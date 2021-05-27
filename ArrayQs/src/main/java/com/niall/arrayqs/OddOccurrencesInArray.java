@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class OddOccurrencesInArray {
     
-    public static int getOddOccurance(int [] array) {
+    public static int getOddOccurance(final int [] array) {
     
         if(array.length == 0 || (array.length % 2) == 0 ) return -1;
         
