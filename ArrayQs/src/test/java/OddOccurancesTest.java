@@ -42,8 +42,10 @@ public class OddOccurancesTest {
     public void given_Array_ReturnOddOccurance() {
     
         int [] array = {9,3,9,3,9,7,9};
-        
         assertEquals(getOddOccurance(array), 7);
+        
+        int [] array2 = {7,3,7,3,7,9,7};
+        assertEquals(getOddOccurance(array2), 9);
     
     }
     
