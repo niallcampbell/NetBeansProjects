@@ -1,18 +1,9 @@
 package menus;
 
-public abstract class FoodMenuFactory {
+public class FoodMenuFactory extends MenuFactory {
     
-    public Menu requestFoodMenu() {
-        
-        Menu menu = createMenu();
-        System.out.println("Restaurant Name: " + menu.getEstablishmentName());
-        System.out.println("Restaurant Type: " + menu.getEstablishmentType());
-        System.out.println("Menu Type: " + menu.getMenuType());
-        System.out.println();
-        return menu;
-        
+    public Menu createMenu() {
+        return new FoodMenu();
     }
-    
-    public abstract Menu createMenu();
     
 }
