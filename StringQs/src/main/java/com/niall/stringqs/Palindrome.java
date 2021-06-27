@@ -12,7 +12,7 @@ public class Palindrome {
      *  Return true if the characters of the given string can be rearranged to form a palindrome. 
      * 
      */
-    public static boolean isPalindrome(final String s) {
+    public static boolean containsPalindrome(final String s) {
     
         HashMap<Character, Integer> occurrences = new HashMap<Character, Integer>();
         
@@ -35,5 +35,16 @@ public class Palindrome {
         return (oddCharCount <= 1);
     }
     
+    /**
+     *  Checks if a String is a palindrome in its current state.  
+     */
+    public static boolean isPalindrome(String s) {
+        
+        StringBuilder s1 = new StringBuilder(s);
+        String reversed = s1.reverse().toString();
+        
+        return s.equals(reversed);
+        
+    }
     
 }
