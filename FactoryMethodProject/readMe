@@ -2,10 +2,11 @@ This project contains code that implements the Factory Method Design Pattern.
 
 There are two type of laptops, both of which implement the Laptop interface: MacLaptop & WindowsLaptop.
 
-The LaptopFactory is an interface that defines a method to build a laptop.
+The LaptopFactory is an abstract class that defines a method to create a laptop.
+It then applies some business logic to the laptop. 
 The type of Laptop that is built and returned is determined by the concrete factories that extend this interface. 
 
-The Client takes a LaptopFactory as a parameter (dependency injection). It uses the factory to build a laptop and then uses it.
+The Client has a method that takes a LaptopFactory as a parameter (dependency injection). 
+It uses the factory to build a laptop and then uses it.
 
 The Driver class acts as a main method that provides the Client with the appropriate factory based on some logic. 
-

@@ -14,8 +14,8 @@ public class Driver {
             laptopFactory = new WindowsLaptopFactory();
         }
         
-        Client client = new Client(laptopFactory);
-        client.useLaptop();
+        Client client = new Client();
+        client.useLaptop(laptopFactory);
         
     }
     

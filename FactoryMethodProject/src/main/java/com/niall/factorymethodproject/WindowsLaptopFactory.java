@@ -1,9 +1,8 @@
 package com.niall.factorymethodproject;
 
-public class WindowsLaptopFactory implements LaptopFactory {
+public class WindowsLaptopFactory extends LaptopFactory {
     
-    public Laptop buildLaptop() {
-        System.out.println("Building laptop.");
+    public Laptop createLaptop() {
         return new WindowsLaptop();
     }
 }

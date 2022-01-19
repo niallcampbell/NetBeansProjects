@@ -4,14 +4,9 @@ public class Client {
     
     Laptop l;
     
-    public Client(LaptopFactory laptopFactory) {
+    public void useLaptop(LaptopFactory laptopFactory) {
         l = laptopFactory.buildLaptop();
-    }
-    
-    public void useLaptop() {
         System.out.println("Client is using laptop.");
-        l.turnOnLaptop();
-        l.getOSDetails();
     }
     
 }

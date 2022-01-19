@@ -1,9 +1,8 @@
 package com.niall.factorymethodproject;
 
-public class MacLaptopFactory implements LaptopFactory {
+public class MacLaptopFactory extends LaptopFactory {
     
-    public Laptop buildLaptop() {
-        System.out.println("Building laptop.");
+    public Laptop createLaptop() {
         return new MacLaptop();
     }
     
