@@ -2,6 +2,8 @@ package com.niall.jsonhtmlproject;
 
 import org.json.JSONObject;
 import org.json.JSONArray;
+import java.util.Set;
+import java.util.Map;
 
 public class JSONPractice {
     
@@ -23,7 +25,12 @@ public class JSONPractice {
         
         System.out.println(jo);
         
-        System.out.println(jo.opt("Course"));
+        System.out.println(jo.getJSONObject("Education").opt("Course"));
+        
+        Set<String> keys = jo.keySet();
+        for(String s : keys) {
+            System.out.print(s);
+        }
         
     }
     
